@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { CssBaseline } from '@material-ui/core'
 import Header from '../Header'
@@ -24,4 +25,8 @@ export default function Layout ({ children }) {
       </ThemeProvider>
     </>
   )
+}
+
+Layout.propTypes = {
+  children: PropTypes.node
 }
