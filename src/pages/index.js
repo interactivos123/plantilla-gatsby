@@ -4,7 +4,7 @@ import SEO from '../components/seo'
 const Inicio = () => (
   <>
     <SEO title='Inicio' />
-    <h1>Inicio</h1>
+    <h1 style={{ marginTop: '100px' }}>Inicio</h1>
   </>
 )
 

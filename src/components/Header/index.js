@@ -1,16 +1,23 @@
 import React from 'react'
-import { Toolbar, Button } from '@material-ui/core'
+import { Grid } from '@material-ui/core'
 import Image from '../image'
-import { MyAppBar } from './styles'
+import { MyAppBar, MyToolbar } from './styles'
 
 const Header = () => {
   return (
     <>
       <MyAppBar position='fixed' color='primary'>
-        <Toolbar>
-          <Image name='logo.png' />
-          <Button variant='contained' color='primary'>Test</Button>
-        </Toolbar>
+        <MyToolbar>
+          <Grid container>
+
+            <Grid item md={4}>
+              <Image name='logo.png' />
+            </Grid>
+
+            <Grid item md={8} />
+
+          </Grid>
+        </MyToolbar>
       </MyAppBar>
     </>
   )
