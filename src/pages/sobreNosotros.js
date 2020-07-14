@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const SobreNosotros = () => {
+const SobreNosotros = () => {
   return (
     <div>
       Nosotros
     </div>
   )
 }
+
+export default SobreNosotros
