@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "corporrate-page-interactivos123",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Corporrate Page Interactivos 123",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "ValentinoT SimonATC",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "gatsby": "^2.23.12",
@@ -23,9 +23,7 @@
   "devDependencies": {
     "prettier": "2.0.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",

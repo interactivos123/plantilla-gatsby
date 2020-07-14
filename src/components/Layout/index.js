@@ -1,17 +1,32 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+import { CssBaseline } from '@material-ui/core'
 import Header from '../Header'
 import Footer from '../Footer'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { theme } from '../../theme'
 
-const Layout = ({ children }) => {
+export default function Layout ({ children }) {
   return (
-    <ThemeProvider theme={theme}>
-      <Header />
-      {children}
-      <Footer />
-    </ThemeProvider>
+    <>
+      <Helmet>
+        <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width' />
+        <link
+          href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap'
+          rel='stylesheet'
+        />
+      </Helmet>
+      <ThemeProvider theme={theme}>
+        <Header />
+        <CssBaseline />
+        {children}
+        <Footer />
+      </ThemeProvider>
+    </>
   )
 }
 
-export default Layout
+Layout.propTypes = {
+  children: PropTypes.node
+}

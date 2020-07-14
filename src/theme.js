@@ -3,18 +3,21 @@ import { createMuiTheme } from '@material-ui/core/styles'
 export const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#04C45C',
+      main: '#123657',
       contrastText: '#fff'
     },
     secondary: {
-      main: '#001B38',
+      main: '#0098db',
       contrastText: '#fff'
+    },
+    text: {
+      primary: '#555'
     }
   },
   typography: {
-    fontFamily: ['Roboto', '-apple-system'].join(','),
+    fontFamily: ['Open Sans', '-apple-system'].join(','),
     h1: {
-      fontSize: 12,
+      fontSize: 40,
       fontWeight: 700
     },
     h2: {
@@ -22,27 +25,27 @@ export const theme = createMuiTheme({
       fontWeight: 700
     },
     h3: {
-      fontSize: 32,
+      fontSize: 24,
       fontWeight: 700
     },
     h4: {
-      fontSize: 32,
+      fontSize: 24,
       fontWeight: 700
     },
     h5: {
-      fontSize: 32,
+      fontSize: 24,
       fontWeight: 700
     },
     h6: {
-      fontSize: 32,
+      fontSize: 24,
       fontWeight: 700
     },
     subtitle1: {
-      fontSize: 28,
+      fontSize: 24,
       fontWeight: 700
     },
     subtitle2: {
-      fontSize: 32,
+      fontSize: 24,
       fontWeight: 700
     },
     body1: {
@@ -50,11 +53,11 @@ export const theme = createMuiTheme({
       fontWeight: 300
     },
     body2: {
-      fontSize: 32,
+      fontSize: 18,
       fontWeight: 700
     },
     button: {
-      fontSize: 16,
+      fontSize: 18,
       fontWeight: 700,
       textTransform: 'none'
     }
@@ -62,7 +65,7 @@ export const theme = createMuiTheme({
   overrides: {
     MuiButton: {
       root: {
-        borderRadius: 20
+        borderRadius: 25
       }
     }
   }
