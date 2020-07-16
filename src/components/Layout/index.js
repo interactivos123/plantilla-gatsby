@@ -16,6 +16,7 @@ export default function Layout ({ children }) {
           href='https://fonts.googleapis.com/css?family=Open+Sans&display=swap'
           rel='stylesheet'
         />
+        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons' />
       </Helmet>
       <ThemeProvider theme={theme}>
         <Header />

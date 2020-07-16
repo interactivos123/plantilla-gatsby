@@ -6,21 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-theme-material-ui',
-      options: {
-        webFontsConfig: {
-          fonts: {
-            google: [
-              {
-                family: 'Montserrat',
-                variants: ['300', '400', '500']
-              }
-            ]
-          }
-        }
-      }
-    },
+    'gatsby-theme-material-ui',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
