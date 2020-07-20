@@ -1,29 +1,9 @@
 import { styled } from '@material-ui/core/styles'
-import { AppBar, Toolbar, Button } from '@material-ui/core'
+import { Button } from '@material-ui/core'
 import { theme } from '../../theme'
 
-export const MyAppBar = styled(AppBar)({
-  background: 'transparent',
-  padding: '10px 0',
-  '& .gatsby-image-wrapper': {
-    width: '250px'
-  },
-  '&.sticky': {
-    background: '#000'
-  }
-})
-
-export const MyToolbar = styled(Toolbar)({
-  width: '1140px',
-  margin: '0 auto',
-  padding: 0,
-  '& svg': {
-    marginLeft: '10px'
-  }
-})
-
 export const MyButtonMenu = styled(Button)({
-  fontSize: '16px',
+  fontSize: '14px',
   marginLeft: '15px',
   padding: '0px',
   '& a': {
@@ -40,5 +20,22 @@ export const MyButtonMenu = styled(Button)({
     background: theme.palette.primary.main,
     color: '#fff',
     textDecoration: 'none'
+  },
+  [theme.breakpoints.down('sm')]: {
+    justifyContent: 'flex-start',
+    padding: '10px 20px',
+    margin: '0',
+    borderRadius: '0',
+    '& a': {
+      borderRadius: '0'
+    },
+    '&:hover a': {
+      background: 'none',
+      color: theme.palette.primary.main
+    },
+    '& a.active': {
+      background: 'none',
+      color: theme.palette.primary.main
+    }
   }
 })
