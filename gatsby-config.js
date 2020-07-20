@@ -5,8 +5,9 @@ module.exports = {
     author: 'ValentinoT SimonATC'
   },
   plugins: [
+    'gatsby-plugin-top-layout',
     'gatsby-plugin-react-helmet',
-    'gatsby-theme-material-ui',
+    'gatsby-plugin-material-ui',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
