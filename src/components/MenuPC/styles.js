@@ -43,6 +43,9 @@ export const MyContainerSocials = styled(Grid)({
   '&.sticky': {
     height: '0px',
     marginBottom: '0px'
+  },
+  [theme.breakpoints.down('sm')]: {
+    display: 'none'
   }
 })
 

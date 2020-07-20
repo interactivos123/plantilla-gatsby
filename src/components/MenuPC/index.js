@@ -14,18 +14,18 @@ import {
 export const MenuPC = (props) => {
   useEffect(() => {
     const navbar = document.getElementById('header')
-    const socials = document.getElementById('container-socials')
-
+    const socials = document.querySelector('#container-socials')
     window.onscroll = function () {
       if (window.pageYOffset >= 1) {
         navbar.classList.add('sticky')
         socials.classList.add('sticky')
+        console.log('social')
       } else {
         navbar.classList.remove('sticky')
         socials.classList.remove('sticky')
       }
     }
-  }, [])
+  })
 
   return (
     <MyAppBar position='fixed' color='primary' id='header'>
@@ -40,22 +40,20 @@ export const MenuPC = (props) => {
 
           <Grid item xs={8}>
 
-            <Hidden smDown>
-              <MyContainerSocials container justify='flex-end' id='container-socials'>
-                <a href='https://www.google.com.co/' target='_blanck'>
-                  <Facebook color='primary' />
-                </a>
-                <a href='https://www.google.com.co/' target='_blanck'>
-                  <Instagram color='primary' />
-                </a>
-                <a href='https://www.google.com.co/' target='_blanck'>
-                  <Twitter color='primary' />
-                </a>
-                <a href='https://www.google.com.co/' target='_blanck'>
-                  <Pinterest color='primary' />
-                </a>
-              </MyContainerSocials>
-            </Hidden>
+            <MyContainerSocials container justify='flex-end' id='container-socials'>
+              <a href='https://www.google.com.co/' target='_blanck'>
+                <Facebook color='primary' />
+              </a>
+              <a href='https://www.google.com.co/' target='_blanck'>
+                <Instagram color='primary' />
+              </a>
+              <a href='https://www.google.com.co/' target='_blanck'>
+                <Twitter color='primary' />
+              </a>
+              <a href='https://www.google.com.co/' target='_blanck'>
+                <Pinterest color='primary' />
+              </a>
+            </MyContainerSocials>
 
             <Hidden smDown>
               <Grid container justify='flex-end'>
