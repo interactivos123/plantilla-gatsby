@@ -2,14 +2,16 @@ import React, { useEffect } from 'react'
 import { Grid, Hidden } from '@material-ui/core'
 import Image from '../image'
 import { Menu } from '@material-ui/icons'
-import { Link } from 'gatsby-theme-material-ui'
+import { Link } from 'gatsby'
 import { ListaMenu } from '../ListaMenu'
 import { RedesSociales } from '../RedesSociales'
 import {
   MyAppBar,
   MyToolbar,
   MyContainerSocials,
-  MyIconButton
+  MyIconButton,
+  MyContainerMenu,
+  MyContainerIconMenuResponsive
 } from './styles'
 
 export const MenuPC = (props) => {
@@ -45,19 +47,15 @@ export const MenuPC = (props) => {
               <RedesSociales />
             </MyContainerSocials>
 
-            <Hidden smDown>
-              <Grid container justify='flex-end'>
-                <ListaMenu />
-              </Grid>
-            </Hidden>
+            <MyContainerMenu container justify='flex-end'>
+              <ListaMenu />
+            </MyContainerMenu>
 
-            <Hidden mdUp>
-              <Grid container justify='flex-end'>
-                <MyIconButton color='primary' aria-label='menu' onClick={() => props.handleOpen()}>
-                  <Menu />
-                </MyIconButton>
-              </Grid>
-            </Hidden>
+            <MyContainerIconMenuResponsive container justify='flex-end'>
+              <MyIconButton color='primary' aria-label='menu' onClick={() => props.handleOpen()}>
+                <Menu />
+              </MyIconButton>
+            </MyContainerIconMenuResponsive>
 
           </Grid>
 

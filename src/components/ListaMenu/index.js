@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby-theme-material-ui'
+import { Link } from 'gatsby'
 import { MyButtonMenu } from './styles'
 
 export const ListaMenu = (props) => {
