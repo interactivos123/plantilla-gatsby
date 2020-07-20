@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core'
 import Image from '../image'
 import { MyAppBar, MyToolbar, MyButtonMenu } from './styles'
 import { Facebook, Instagram, Twitter, Pinterest } from '@material-ui/icons'
-import { Link } from 'gatsby-theme-material-ui'
+import { Link } from 'gatsby'
 
 const Header = () => {
   useEffect(() => {
