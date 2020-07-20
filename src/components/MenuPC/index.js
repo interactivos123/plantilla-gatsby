@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
 import { Grid, Hidden } from '@material-ui/core'
 import Image from '../image'
-import { Facebook, Instagram, Twitter, Pinterest, Menu } from '@material-ui/icons'
+import { Menu } from '@material-ui/icons'
 import { Link } from 'gatsby-theme-material-ui'
 import { ListaMenu } from '../ListaMenu'
+import { RedesSociales } from '../RedesSociales'
 import {
   MyAppBar,
   MyToolbar,
@@ -41,18 +42,7 @@ export const MenuPC = (props) => {
           <Grid item xs={8}>
 
             <MyContainerSocials container justify='flex-end' id='container-socials'>
-              <a href='https://www.google.com.co/' target='_blanck'>
-                <Facebook color='primary' />
-              </a>
-              <a href='https://www.google.com.co/' target='_blanck'>
-                <Instagram color='primary' />
-              </a>
-              <a href='https://www.google.com.co/' target='_blanck'>
-                <Twitter color='primary' />
-              </a>
-              <a href='https://www.google.com.co/' target='_blanck'>
-                <Pinterest color='primary' />
-              </a>
+              <RedesSociales />
             </MyContainerSocials>
 
             <Hidden smDown>
